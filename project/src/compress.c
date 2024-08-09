@@ -1,27 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "compress.h"
+#include "common.h"
+
 /// dictionary size values
 #define size_dictionary 100000
 #define size_out 1000000
 #define size_word 100
 
-/// search for a word in the dictionary
-int Find(int **in, int last_position, int *str, int size) {
-    for (int i = 0; i < last_position; ++i) {
-        int flag = 1;
-        for (int j = 0; j < size; ++j) {
-            if (in[i][j] != str[j]) {
-                flag = 0;
-                break;
-            }
-        }
-        // if found, then output the index
-        if (flag) return i;
-    }
-    // if not found, then output -1
-    return -1;
-}
+///// search for a word in the dictionary
+//int Find(int **in, int last_position, int *str, int size) {
+//    for (int i = 0; i < last_position; ++i) {
+//        int flag = 1;
+//        for (int j = 0; j < size; ++j) {
+//            if (in[i][j] != str[j]) {
+//                flag = 0;
+//                break;
+//            }
+//        }
+//        // if found, then output the index
+//        if (flag) return i;
+//    }
+//    // if not found, then output -1
+//    return -1;
+//}
 
 /// determining the number of insignificant zeros
 int CountZero(int tmp) {
@@ -34,14 +37,14 @@ int CountZero(int tmp) {
     return 32 - count;
 }
 
-/// creating a bit mask
-// in the future, it is used to take only part of the bits of the number
-int CreateMask(int a, int b) {
-    int r = 0;
-    for (int i = a; i <= b; ++i)
-        r |= 1 << i;
-    return r;
-}
+///// creating a bit mask
+//// in the future, it is used to take only part of the bits of the number
+//int CreateMask(int a, int b) {
+//    int r = 0;
+//    for (int i = a; i <= b; ++i)
+//        r |= 1 << i;
+//    return r;
+//}
 
 /// delimiting a <enc1> for 2 compression
 // adding delimiters ('0') to <enc> when increasing the number of significant bits
@@ -191,22 +194,22 @@ void Compress2(const char filename[], int size_enc, int enc[]) {
     fclose(encode_write);
 }
 
-int main() {
-    printf("Enter the path to the original file (press \"Enter\" to complete the input):\n");
-    char filename[100] = {0};
-    scanf("%s", filename); // e.g., ../files/old_file.txt
-
-    int size_enc = 0;
-    int *enc1 = Compress1(filename, &size_enc);    // compress 1 method
-
-    int *enc2 = Analysis(&size_enc, enc1);  // delimiting a <enc1> for 2 compression
-    free(enc1);
-
-    printf("\nEnter the path to the encoding file (press \"Enter\" to complete the input):\n");
-    scanf("%s", filename); // e.g., ../files/encode.txt
-
-    Compress2(filename, size_enc, enc2);    // compress 2 method
-    free(enc2);
-
-    return 0;
-}
+//int main() {
+//    printf("Enter the path to the original file (press \"Enter\" to complete the input):\n");
+//    char filename[100] = {0};
+//    scanf("%s", filename); // e.g., ../files/file.txt
+//
+//    int size_enc = 0;
+//    int *enc1 = Compress1(filename, &size_enc);    // compress 1 method
+//
+//    int *enc2 = Analysis(&size_enc, enc1);  // delimiting a <enc1> for 2 compression
+//    free(enc1);
+//
+//    printf("\nEnter the path to the encoding file (press \"Enter\" to complete the input):\n");
+//    scanf("%s", filename); // e.g., ../files/encode.txt
+//
+//    Compress2(filename, size_enc, enc2);    // compress 2 method
+//    free(enc2);
+//
+//    return 0;
+//}
