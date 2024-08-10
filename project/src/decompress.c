@@ -3,37 +3,6 @@
 #include <string.h>
 
 #include "decompress.h"
-#include "common.h"
-
-/// dictionary size values
-#define size_dictionary 100000
-#define size_out 1000000
-#define size_word 100
-
-///// search for a word in the dictionary
-//int Find(int **in, int last_position, int *str, int size) {
-//    for (int i = 0; i < last_position; ++i) {
-//        int flag = 1;
-//        for (int j = 0; j < size; ++j) {
-//            if (in[i][j] != str[j]) {
-//                flag = 0;
-//                break;
-//            }
-//        }
-//        // if found, then output the index
-//        if (flag) return i;
-//    }
-//    // if not found, then output -1
-//    return -1;
-//}
-//
-///// creating a bit mask
-//int CreateMask(int a, int b) {
-//    int r = 0;
-//    for (int i = a; i <= b; ++i)
-//        r |= 1 << i;
-//    return r;
-//}
 
 /// saving the decoded text to a file
 void Output(const char filename[], int **dec, int size_dec) {
@@ -193,24 +162,3 @@ int *Decompress2(const char filename[], int *size_dec) {
     fclose(encode_read);
     return dec;
 }
-
-//int main() {
-//    printf("Enter the path to the encoding file (press \"Enter\" to complete the input):\n");
-//    char filename[100] = {0};
-//    scanf("%s", filename); // e.g., ../files/encode.txt
-//
-//    int size_dec = 0;
-//    int *dec = Decompress2(filename, &size_dec); // decompress 2 method
-//
-//    int size_dec1 = 0;
-//    int **dec1 = Decompress1(dec, size_dec, &size_dec1); // decompress 1 method
-//    free(dec);
-//
-//    printf("\nEnter the path to the new file (press \"Enter\" to complete the input):\n");
-//    scanf("%s", filename); // e.g., ../files/new_file.txt
-//
-//    Output(filename, dec1, size_dec1); // output the decoded text
-//    free(dec1);
-//
-//    return 0;
-//}

@@ -21,24 +21,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dcd9f89-cdda-40ae-9248-0e5a8f902993" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/compress/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/.idea/hemewrok_2.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/files/encode.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/files/old_file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compress/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/.idea/homework_3.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/files/encode.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/files/new_file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decompress/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compress.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/compress.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decompress.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/decompress.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "CMake Application.CompressionProject.executor": "Debug",
+    "CMake Application.CompressionProject.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -96,12 +82,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CompressionProject" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompressionProject" TARGET_NAME="CompressionProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompressionProject" RUN_TARGET_NAME="CompressionProject">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompressionProject" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CompressionProject" TARGET_NAME="CompressionProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CompressionProject" RUN_TARGET_NAME="CompressionProject">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -117,7 +103,8 @@
       <updated>1723214187577</updated>
       <workItem from="1723214188487" duration="229000" />
       <workItem from="1723214425201" duration="49000" />
-      <workItem from="1723214487788" duration="4019000" />
+      <workItem from="1723214487788" duration="5799000" />
+      <workItem from="1723284091380" duration="4493000" />
     </task>
     <servers />
   </component>
