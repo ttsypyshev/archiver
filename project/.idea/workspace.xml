@@ -22,15 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dcd9f89-cdda-40ae-9248-0e5a8f902993" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1984.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.c" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.h" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/compress.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/compress.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/decompress.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/decompress.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compress.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/compress.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decompress.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/decompress.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +99,7 @@
       <workItem from="1723284091380" duration="4493000" />
       <workItem from="1723288987794" duration="3941000" />
       <workItem from="1723377229618" duration="19166000" />
-      <workItem from="1723401398855" duration="5554000" />
+      <workItem from="1723401398855" duration="6382000" />
     </task>
     <servers />
   </component>
